@@ -1,0 +1,22 @@
+.header {
+  font-size: 24px;
+  padding: 10px 20px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  background: #393939;
+  color: #fff;
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}

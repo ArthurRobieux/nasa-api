@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Test technique React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Versions utilisées
 
-## Available Scripts
+- `node v16.14.0`
+- `npm 8.3.1`
 
-In the project directory, you can run:
+## Commandes disponibles
 
-### `npm start`
+- `npm install`
+- `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ouvrir [http://localhost:3000](http://localhost:3000) dans votre navigateur.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Objectifs
 
-### `npm test`
+- Typer une partie de l'API avec Typescript
+- Utiliser l'API "rovers" de la NASA pour afficher les données capturées par les rovers circulants sur Mars.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Bonus
 
-### `npm run build`
+- Utiliser l'API "APOD" de la NASA pour afficher la photo d'astronomie du jour sur une nouvelle route.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## TODO
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Typage de l'API
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Compléter les typage `RoverType` dans le fichier `src/modules/api-client/types/nasa.ts`
 
-### `npm run eject`
+### Affichage des données
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Afficher la liste des rovers dans le composant `Rovers`
+- Pouvoir sélectionner un rover, puis afficher les informations associées en se servant du composant `Rover`
+- Une fois un rover sélectionné, récupérer les photos associées et les afficher en utilisant le composant `Photo`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Bonus
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Ajouter une route `/apod/` et afficher la photo du jour avec ses informations
