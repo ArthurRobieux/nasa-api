@@ -1,0 +1,14 @@
+.container {
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+}
+
+.rover-name {
+  border: black solid 1px;
+  margin-right: 1rem;
+}
+
+.rover-detail {
+  border: green 1px solid;
+}
